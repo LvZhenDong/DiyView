@@ -7,18 +7,21 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.kklv.diyview.activity.ProgressActivity;
+import com.kklv.diyview.activity.PswdEtActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    TextView tvPgb;
+    TextView tvPgb,tvPswdEt;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         tvPgb=findViewById(R.id.tv_pgb);
+        tvPswdEt=findViewById(R.id.tv_pswd_et);
 
         tvPgb.setOnClickListener(this);
+        tvPswdEt.setOnClickListener(this);
     }
 
     @Override
@@ -26,6 +29,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (v.getId()){
             case R.id.tv_pgb:
                 startActivity(ProgressActivity.class);
+                break;
+            case R.id.tv_pswd_et:
+                startActivity(PswdEtActivity.class);
                 break;
         }
     }
