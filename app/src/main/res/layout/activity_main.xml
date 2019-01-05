@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/tv_pgb"
@@ -19,6 +18,14 @@
         android:id="@+id/tv_pswd_et"
         android:paddingStart="18dp"
         android:text="pswd et"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <TextView
+        android:id="@+id/tv_wave"
+        android:paddingStart="18dp"
+        android:text="wave view"
         android:gravity="center_vertical"
         android:layout_width="match_parent"
         android:layout_height="50dp" />
