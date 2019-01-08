@@ -8,11 +8,12 @@ import android.widget.TextView;
 
 import com.kklv.diyview.activity.ProgressActivity;
 import com.kklv.diyview.activity.PswdEtActivity;
+import com.kklv.diyview.activity.RingPgbActivity;
 import com.kklv.diyview.activity.WaveActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    TextView tvPgb, tvPswdEt, tvWave;
+    TextView tvPgb, tvPswdEt, tvWave,tvRingPgb;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,10 +23,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         tvPgb = findViewById(R.id.tv_pgb);
         tvPswdEt = findViewById(R.id.tv_pswd_et);
         tvWave = findViewById(R.id.tv_wave);
+        tvRingPgb=findViewById(R.id.tv_ring_pgb);
 
         tvPgb.setOnClickListener(this);
         tvPswdEt.setOnClickListener(this);
         tvWave.setOnClickListener(this);
+        tvRingPgb.setOnClickListener(this);
     }
 
     @Override
@@ -39,6 +42,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.tv_wave:
                 startActivity(WaveActivity.class);
+                break;
+            case R.id.tv_ring_pgb:
+                startActivity(RingPgbActivity.class);
                 break;
         }
     }

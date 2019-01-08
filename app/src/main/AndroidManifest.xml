@@ -19,6 +19,7 @@
         <activity android:name=".activity.ProgressActivity" />
         <activity android:name=".activity.PswdEtActivity" />
         <activity android:name=".activity.WaveActivity"></activity>
+        <activity android:name=".activity.RingPgbActivity"/>
     </application>
 
 </manifest>
